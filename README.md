@@ -1,27 +1,50 @@
-# Test
+# TodeProject
 
-這個項目是用生成的 [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
 
-## 開發啟動
+## Development server
 
-Run `ng serve` 對於開發伺服器。導航至 `http://localhost:4200/`. 如果您更改任何來源文件，應用程式將自動重新載入。
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## 程式碼腳手架
+## Code scaffolding
 
-Run `ng generate component component-name` 產生一個新的組件。您也可以使用 `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build 建造
+## Build
 
-Run `ng build` 建構項目。建置工件將儲存在 `dist/` 目錄。
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## 運行單元測試
+## Running unit tests
 
-Run `ng test` 透過執行單元測試[Karma](https://karma-runner.github.io).
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## 運行端對端測試
+## Running end-to-end tests
 
-Run `ng e2e` 透過您選擇的平台執行端對端測試。要使用該命令，您需要先新增一個實現端到端測試功能的套件。
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
 ## Further help
 
-要獲得有關 Angular CLI 使用的更多幫助 `ng help` 或去看看 [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+
+### 使用Angular Material來幫我們快速建立各種元件
+```
+ng add @angular/material
+
+```
+### 創建to-do
+cd components 
+```
+ng g c ToDo
+```
+components 資料夾內會新增一個 to-do資料夾
+to-do.component.html
+to-do.component.scss
+to-do.component.spec.ts
+to-do.component.ts
+
+在app資料夾內新增
+app.component.html 新增 <app-to-do></app-to-do>
+```
+```
