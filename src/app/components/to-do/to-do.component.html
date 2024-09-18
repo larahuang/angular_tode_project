@@ -1,4 +1,15 @@
-<div class="title">
-<h1 >{{Title}}</h1>
-<img  [src]="imageLink" alt="">
+<div class="container">
+  <div class="title">
+    <h1 >{{Title}}</h1>
+    <img  [src]="imageLink" alt="">
+  </div>
+  <div class="forms">
+    <div class="input-group">
+        <input type="text" class="form-control"
+       [(ngModel)]="newTask"
+        />
+        <button class="btn btn-primary" (click)="addTasks()">Add</button>
+    </div>
+
+  </div>
 </div>
