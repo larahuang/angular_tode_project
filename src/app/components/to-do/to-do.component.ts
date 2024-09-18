@@ -17,7 +17,7 @@ export class ToDoComponent {
   isAvalible : boolean = false;
   addTasks() {
     const vm = this;
-    if (vm.tasks != null) {
+    if (vm.newTask.trim() !== null) {
       vm.tasks.push(vm.newTask)
       vm.newTask="";
       vm.isAvalible = true;
