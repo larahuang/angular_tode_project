@@ -23,3 +23,13 @@
         width: 1140px;
     }
 }
+app-navbar{
+   width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.active{
+  border:1px solid red;
+}
