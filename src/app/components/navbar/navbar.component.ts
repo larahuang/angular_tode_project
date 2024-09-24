@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 import { CommonModule,Location } from '@angular/common';
 import { RouterLink } from '@angular/router';
 
@@ -16,19 +16,11 @@ interface navListType{
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
-
-  navLists: navListType[] = [
-    { title: 'Home' ,path:'index'},
-    {title:'FetchData',path:'fetch-data'}
-  ]
-  //頁面名稱
-  pageTitle: string = 'Home';
-
-  //
-  isActive: boolean = false;
-
+  @Input() navListsCurrent = '';
+  @Input() npageTitleCurrent = '';
+  @Input() isActiveCurrent = '';
   //點擊頁面按鈕函式
   actionList(path: string) {
-    this.pageTitle = path;
+    this.npageTitleCurrent = path;
   }
 }

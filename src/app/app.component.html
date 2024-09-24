@@ -1,6 +1,15 @@
 <main class="main">
   <!-- <app-to-do></app-to-do> -->
-   <app-navbar></app-navbar>
-</main>
+   <app-navbar
+   [navListsCurrent]="navLists"
+   [npageTitleCurrent]="pageTitle"
+   [isActiveCurrent]="pageTitle"
+   ></app-navbar>
 
+</main>
+   <div>
+   <div>normalValue的值:{{normalValue}}</div>
+   <div> constructor的值:{{constructorValue}}</div>
+    <div>ngOnInit的值:{{ngOnInitValue}}</div>
+  </div>
 <router-outlet />
