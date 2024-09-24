@@ -1,16 +1,16 @@
-.nav{
-  background-color: #00bcd4;
-  color:white;
-  width: 100%;
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
-  height: 50px;
-  ul{
+
+  .nav{
     list-style-type: none;
     display: flex;
     margin-bottom: 0rem;
-        padding-inline-start: 0px;
+    padding-inline-start: 0px;
+    background-color: #00bcd4;
+    color:white;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 50px;
     li{
        list-style-type: none;
        display: flex;
@@ -23,4 +23,7 @@
        }
     }
   }
+
+ .activeNav{
+    border-bottom: 1px solid white;
 }

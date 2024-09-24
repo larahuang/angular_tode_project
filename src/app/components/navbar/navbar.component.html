@@ -1,6 +1,13 @@
- <nav class="nav">
-    <ul>
-      <li><a routerLink="/" class="cursor-pointer">Home</a></li>
-      <li><a routerLink="fetch-data" class="cursor-pointer">FetchData</a></li>
+ <ng-container>
+    <ul class="nav">
+      <li
+       *ngFor="let item of navLists ; let index = index"
+      [ngClass]="pageTitle === item.title ? 'activeNav' : ''"
+       >
+        <a class="cursor-pointer"
+        [routerLink]="item.path"
+        (click)="actionList(item.title)"
+        >{{item.title}}</a>
+      </li>
     </ul>
-  </nav>
+</ng-container>
